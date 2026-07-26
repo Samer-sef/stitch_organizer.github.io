@@ -93,6 +93,30 @@
     .btn.primary { background:var(--red); border-color:var(--red); color:var(--linen0); }
     .btn.primary:hover { background:var(--red-deep); border-color:var(--red-deep); color:#fff; }
 
+    /* ---- Download buttons ---- */
+    .get { margin:56px 0 0; text-align:center; }
+    .get-label { font-family:var(--serif); font-style:italic; font-size:1.02rem;
+      color:var(--linen5); margin:0 0 18px; letter-spacing:.2px; }
+    .stores { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+    .store-btn { display:inline-flex; align-items:center; gap:12px;
+      padding:12px 22px 12px 18px; min-width:200px;
+      border-radius:14px; text-decoration:none;
+      border:1px solid var(--linen3); background:#fff; color:var(--linen7);
+      transition:transform .12s ease, border-color .12s ease,
+                 box-shadow .18s ease, background .12s ease; }
+    .store-btn:hover { transform:translateY(-1px); border-color:var(--red);
+      box-shadow:0 6px 18px rgba(155,34,34,0.10); }
+    .store-btn .glyph { flex:0 0 auto; width:26px; height:26px;
+      color:var(--red-deep); display:flex; align-items:center; justify-content:center; }
+    .store-btn .glyph svg { width:100%; height:100%; fill:currentColor; }
+    .store-btn .lines { display:flex; flex-direction:column; align-items:flex-start;
+      line-height:1.15; text-align:left; }
+    .store-btn .top { font-family:var(--sans); font-size:.72rem; font-weight:500;
+      letter-spacing:.6px; text-transform:uppercase; color:var(--linen5); }
+    .store-btn .name { font-family:var(--serif); font-weight:600; font-size:1.16rem;
+      color:var(--linen7); margin-top:1px; }
+    @media (max-width:400px){ .store-btn { min-width:auto; width:100%; justify-content:center; } }
+
     /* ---- Footer ---- */
     footer { text-align:center; padding:40px 0 56px; margin-top:56px; color:var(--linen5); font-size:.88rem; }
     footer .stitchline { max-width:200px; margin:0 auto 22px; }
@@ -180,8 +204,38 @@
       your device.
     </p>
 
+    <section class="get" aria-label="Download Stitch Organizer">
+      <p class="get-label">Free on iPhone and Android</p>
+      <div class="stores">
+        <a class="store-btn" href="https://apps.apple.com/us/app/stitch-organizer/id6787266532"
+           aria-label="Download Stitch Organizer on the App Store">
+          <span class="glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M16.365 12.79c-.02-2.09 1.706-3.09 1.784-3.14-.97-1.42-2.48-1.62-3.02-1.64-1.28-.13-2.5.76-3.15.76-.66 0-1.66-.74-2.73-.72-1.4.02-2.7.82-3.42 2.07-1.46 2.52-.37 6.25 1.05 8.3.7 1 1.52 2.13 2.6 2.09 1.05-.04 1.45-.68 2.72-.68 1.27 0 1.63.68 2.74.66 1.13-.02 1.85-1.02 2.54-2.03.8-1.17 1.13-2.3 1.15-2.36-.03-.01-2.21-.85-2.24-3.37zM14.19 6.34c.58-.7.97-1.68.86-2.65-.83.03-1.84.55-2.44 1.25-.53.62-1.01 1.62-.88 2.57.93.07 1.88-.47 2.46-1.17z"/>
+            </svg>
+          </span>
+          <span class="lines">
+            <span class="top">Download on the</span>
+            <span class="name">App Store</span>
+          </span>
+        </a>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.samersef.stitchorganizer"
+           aria-label="Get Stitch Organizer on Google Play">
+          <span class="glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M3.6 2.32c-.36.36-.56.92-.56 1.63v16.1c0 .71.2 1.27.56 1.63l.09.08 9.02-9.02v-.21L3.69 2.24l-.09.08zM17.29 15.6l-3.01-3.01v-.21l3.01-3.01.07.04 3.56 2.02c1.02.58 1.02 1.52 0 2.1l-3.56 2.03-.07.04zM17.36 15.56l-3.08-3.08L3.6 22.68c.34.36.9.4 1.53.05L17.36 15.56zM17.36 8.44L5.13 1.27c-.63-.35-1.19-.31-1.53.05l10.68 10.68 3.08-3.08z"/>
+            </svg>
+          </span>
+          <span class="lines">
+            <span class="top">Get it on</span>
+            <span class="name">Google Play</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
     <div class="cta">
-      <a class="btn primary" href="./privacy-policy.html">Privacy Policy</a>
+      <a class="btn" href="./privacy-policy.html">Privacy Policy</a>
       <a class="btn" href="./terms-of-use.html">Terms of Use</a>
     </div>
 

@@ -27,79 +27,144 @@
     <a class="back" href="./index.html">&larr; Stitch Organizer</a>
     <div class="card">
       <h1>Privacy Policy</h1>
-      <p class="meta">Stitch Organizer &middot; Last updated: August 2, 2026</p>
+      <p class="meta">Stitch Organizer &middot; Last updated: September 30, 2026</p>
 
       <p>Stitch Organizer ("the app", "we", "us") is a cross-stitch project and
       floss-tracking app. This policy explains what information the app handles
-      and how. In short: everything you create stays on your device. The app has
-      no accounts and does not upload your projects, floss stash, notes, or
-      photos to any server. The only information we receive is anonymous usage
-      analytics, described below.</p>
+      and why. In short: what you create stays on your device. The app has no
+      accounts and does not send us your projects, floss stash, notes or photos.
+      We receive anonymous usage analytics and, only if you use Pattern Import,
+      the files you choose to import.</p>
 
       <h2>Information stored on your device</h2>
-      <p>Everything you create in the app — projects, notes, floss stash,
-      shopping lists, storage boxes, and any photos you attach — is stored
-      <strong>locally on your device</strong>. We do not have accounts, we do
-      not upload this data to any server, and we cannot see it.</p>
+      <p>Everything you create in the app &mdash; projects, notes, floss stash,
+      shopping lists, storage boxes, and any photos you attach &mdash; is stored
+      on your device. We do not upload it and we cannot see it.</p>
 
       <h2>Photos and camera</h2>
-      <p>If you choose to add a photo to a project, the app asks permission to
-      use your camera or photo library. Selected photos are stored only on your
-      device and are never transmitted to us or any third party.</p>
+      <p>The app asks for permission to use your camera or photo library when
+      you add a photo to a project or photograph a pattern to import. Project
+      photos stay on your device. A photo you choose to import is sent as
+      described under Pattern Import.</p>
 
       <h2>Analytics</h2>
       <p>The app uses <strong>Google Firebase Analytics</strong> to understand,
-      in aggregate, how the app is used so we can improve it. What this means
-      in practice:</p>
+      in aggregate, how the app is used so we can improve it.</p>
       <ul>
-        <li><strong>What is collected:</strong> anonymous usage events (for
-        example, when a project is created or a shopping list is committed),
+        <li><strong>What is collected:</strong> anonymous usage events and
         screen views, app version, device model, operating system version,
-        approximate country, and an anonymous, Firebase-generated app-install
-        identifier. Firebase may also collect standard automatic events as
-        described in Google's documentation.</li>
-        <li><strong>Approximate size of your collection:</strong> so we can tell
-        whether a feature works as well for a large stash as a small one, the
-        app reports a few coarse, non-identifying descriptions of how you use
-        it — how many projects you have as a <em>range</em> (for example
-        "4&ndash;10" rather than an exact number), roughly how many floss
-        colours you hold as a range, which of the built-in thread brands you
-        stock, whether you track any fabric, and which language the app is
-        displayed in. These are ranges and yes/no flags only; they never
-        include an exact count or anything you typed.</li>
-        <li><strong>What is <em>not</em> collected:</strong> the contents of
-        your projects, notes, floss stash, shopping lists, storage boxes, or
-        photos. This includes anything you type: project and colour names, your
-        own floss codes, storage box labels, and search terms all stay on your
-        device. Where an event needs to describe what you typed, it records only
-        a characteristic such as its length &mdash; never the text. Your name,
-        email, contacts, precise location, and advertising identifiers are also
-        not collected by this app.</li>
-        <li><strong>Where the data goes:</strong> events are sent to Google
-        Firebase and processed by Google under their
+        approximate country, and an anonymous app-install identifier. It also
+        includes a few general descriptions of how you use the app, given as
+        ranges rather than exact numbers (for example, roughly how many
+        projects you have), the language the app is shown in, and which plan
+        you are on.</li>
+        <li><strong>What is not collected:</strong> the contents of your
+        projects, notes, floss stash, shopping lists, storage boxes or photos,
+        or anything you type, such as names, labels or search terms &mdash;
+        never the text. Your name, email, contacts, precise location and
+        advertising identifiers are not collected.</li>
+        <li><strong>Who processes it:</strong> Google, under the
         <a href="https://firebase.google.com/support/privacy">Firebase Privacy
         and Security</a> terms.</li>
-        <li><strong>When it is collected:</strong> only in the production build
-        of the app installed from the App Store or Google Play. Development
-        builds and automated tests do not send analytics.</li>
       </ul>
-      <p>We do not use analytics data for advertising, and we do not share it
-      with third parties beyond the Google Firebase service that processes it
-      on our behalf.</p>
+      <p>We do not use analytics for advertising or to identify you.</p>
+
+      <h2>Pattern Import and AI processing</h2>
+      <p>Pattern Import is optional. Nothing here happens unless you choose a
+      file and confirm the import, and the app shows you a summary of this
+      section before your first import.</p>
+      <ul>
+        <li><strong>Your file leaves your device.</strong> The pages or photo
+        you choose are uploaded to our server, hosted by Google Cloud, and read
+        by <strong>Google's Gemini AI</strong>, which returns the pattern
+        details. The reading does not happen on your device. Only what you
+        choose is sent, never the rest of the pattern.</li>
+        <li><strong>What is read:</strong> floss codes and brands, stitch
+        counts, fabric count, the pattern's size, a project name and any notes
+        in the file. You review the result, and nothing is added to your
+        projects until you confirm it.</li>
+        <li><strong>What is kept:</strong> we do not keep your file. Our server
+        passes it to Google to be read and does not store it. The details read
+        from it are kept on our server so that an interrupted import can be
+        finished without reading the file again, and are deleted automatically,
+        normally within about two days. Our database backups, which may include
+        them, are kept for 14 days from when each backup is made and then
+        deleted. They are linked only to a random identifier for your
+        installation, not to you.</li>
+        <li><strong>Google's handling:</strong> Google processes the file for
+        us under its <a href="https://cloud.google.com/terms/data-processing-addendum">Cloud
+        data processing terms</a> and does not use it to train its models. It
+        may hold a request in memory for up to 24 hours. If its automated
+        systems flag a request as possible misuse, Google may keep it for up to
+        90 days to check it, as those terms allow.</li>
+        <li><strong>What is never recorded:</strong> our records of an import
+        hold only basic technical facts, such as whether it worked. They never
+        include the contents of your file or anything read from it.</li>
+        <li><strong>Your installation identifier:</strong> to count imports
+        fairly and prevent abuse, the app creates a random identifier on first
+        use and checks that requests come from a genuine copy of the app. The
+        identifier is not linked to your name, email or any account. If you
+        need help with a purchase, the app can copy it, with the app version
+        and your phone's system, for you to send us; we use it only to answer
+        you.</li>
+      </ul>
+
+      <h2>Optional sign-in</h2>
+      <p>You never need an account. If you choose to sign in with Apple or
+      Google, you can use Pro and Pattern Import on your other phones and
+      tablets.</p>
+      <ul>
+        <li><strong>What we receive:</strong> an identifier from Apple or
+        Google for your account and, if they share it, your email address
+        (Apple may give a private relay address instead). We use them only to
+        sign you in and to answer you if you ask for help.</li>
+        <li><strong>What stays on your device:</strong> your projects, notes,
+        floss stash, shopping lists, storage boxes and photos. Signing in does
+        not copy them anywhere.</li>
+        <li><strong>Moving to a new Android phone:</strong> Android keeps a
+        sign-in key for the app in your Google account's backup, encrypted
+        end to end, so the app can sign you back in on your new phone. Our
+        server keeps only the public half of that key.</li>
+        <li><strong>Deleting your account:</strong> in the app, under More,
+        then Account. This deletes your sign-in, the sign-in keys and the
+        Pattern Import records linked to it, and our subscription service's
+        record of you. It does not cancel your subscription: cancel that in
+        your App Store or Google Play settings. Counts of how many imports a
+        subscription has used are kept, linked only to the subscription, so
+        limits cannot be reset by deleting an account.</li>
+      </ul>
+
+      <h2>Purchases</h2>
+      <p>Paid plans are processed by Apple or Google; we never see your payment
+      details. A subscription management service tells us whether your
+      subscription is active, using your installation identifier, which is not
+      linked to your name or email.</p>
 
       <h2>What we do not do</h2>
       <ul>
-        <li>We do not sell or rent your data.</li>
+        <li>We do not sell or share your data for advertising.</li>
         <li>We do not show advertisements.</li>
-        <li>We do not require an account or collect your name, email, or contacts.</li>
-        <li>We do not use analytics to identify you as an individual.</li>
+        <li>We do not require an account. We do not collect your name or
+        contacts, and we receive your email only if you choose to sign in
+        and Apple or Google shares it.</li>
       </ul>
 
-      <h2>Data retention and deletion</h2>
-      <p>Because your content lives on your device, you can delete it at any time
-      by removing items in the app or uninstalling the app, which erases all
-      locally stored data. We hold no copy of your data because none is ever
-      sent to us.</p>
+      <h2>Why we use this information</h2>
+      <p>We use analytics because we have a legitimate interest in improving
+      the app, and Pattern Import data to provide the import you asked for.
+      Our service providers may process data in the United States and other
+      countries, under safeguards provided in their terms.</p>
+
+      <h2>Retention, deletion and your rights</h2>
+      <p>What you create lives on your device: delete it in the app, or
+      uninstall the app to erase it all. Pattern Import data is deleted
+      automatically as described above. If you signed in, you can delete your
+      account in the app at any time, as described under Optional sign-in.</p>
+      <p>Depending on where you live, you may have the right to access, correct
+      or delete personal data about you, or to object to its use. Because the
+      data we receive is not linked to your identity, we may need your help to
+      find it. To make a request, email us at the address below. You may also
+      complain to your local data protection authority.</p>
 
       <h2>Children</h2>
       <p>Stitch Organizer is not directed to children under 13 and we do not

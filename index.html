@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stitch Organizer — a cozy companion for cross-stitchers</title>
-  <meta name="description" content="Stitch Organizer catalogs your floss stash, plans projects thread-by-thread, and keeps a smart shopping list — all on your phone, no account needed." />
+  <title>Stitch Organizer: a cozy companion for cross-stitchers</title>
+  <meta name="description" content="Stitch Organizer catalogs your floss stash, reads the floss list from your patterns, plans projects thread-by-thread and keeps a smart shopping list. All on your phone, no account needed." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
@@ -83,6 +83,22 @@
       font-size:.98rem; color:var(--linen5); }
     .private b { color:var(--linen7); }
 
+    /* ---- Pro note: a swatch card pinned to the linen ---- */
+    .pro { margin:44px auto 0; max-width:30rem; padding:22px 26px 18px;
+      background:#fff; border:1px solid var(--linen3); border-radius:16px;
+      box-shadow:0 6px 20px rgba(58,46,36,0.06); }
+    .pro h2 { font-family:var(--serif); font-weight:600; font-size:1.3rem;
+      margin:0 0 4px; text-align:center; }
+    .pro .sub { text-align:center; color:var(--linen5); font-size:.95rem; margin:0 0 12px; }
+    .pro ul { list-style:none; padding:0; margin:0; }
+    .pro li { padding:7px 0 7px 22px; position:relative; color:var(--linen6);
+      border-bottom:1px dashed var(--linen3); }
+    .pro li:last-child { border-bottom:0; }
+    .pro li::before { content:""; position:absolute; left:2px; top:15px;
+      width:9px; height:9px; border-radius:50%; background:var(--red-soft);
+      border:1.5px solid var(--red); }
+    .pro .foot { text-align:center; font-size:.88rem; color:var(--linen5); margin:12px 0 0; }
+
     /* ---- CTA ---- */
     .cta { margin:44px 0 0; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
     .btn { font-family:var(--sans); font-weight:600; font-size:.95rem;
@@ -154,26 +170,30 @@
     <p class="about">
       Stitch Organizer is a small companion app for cross-stitchers. It keeps a
       running inventory of your floss, plans each project <b>thread-by-thread</b>,
-      and tells you exactly what to buy &mdash; so you never grab another skein of
+      and tells you exactly what to buy, so you never grab another skein of
       DMC&nbsp;310 you already own.
     </p>
 
     <ul class="does">
       <li>
         <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="17" y1="7" x2="7" y2="17" stroke="#9b2222" stroke-width="3" stroke-linecap="round"/><line x1="7" y1="7" x2="17" y2="17" stroke="#c43030" stroke-width="3" stroke-linecap="round"/></svg>
-        <span class="t"><b>Catalog your stash</b> <span>— every color and count, always at hand.</span></span>
+        <span class="t"><b>Catalog your stash</b><span>: every color, any brand, even half a skein.</span></span>
       </li>
       <li>
         <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="17" y1="7" x2="7" y2="17" stroke="#2d5270" stroke-width="3" stroke-linecap="round"/><line x1="7" y1="7" x2="17" y2="17" stroke="#3d6b8a" stroke-width="3" stroke-linecap="round"/></svg>
-        <span class="t"><b>Plan projects</b> <span>— list required floss and track what's still missing.</span></span>
+        <span class="t"><b>Read your floss list</b><span>: pick the page from a PDF or a photo, and the codes fill in for you.</span></span>
       </li>
       <li>
         <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="17" y1="7" x2="7" y2="17" stroke="#4a7d50" stroke-width="3" stroke-linecap="round"/><line x1="7" y1="7" x2="17" y2="17" stroke="#6e9e70" stroke-width="3" stroke-linecap="round"/></svg>
-        <span class="t"><b>Shop smart</b> <span>— build a list, then top up your stash in a tap.</span></span>
+        <span class="t"><b>Plan projects</b><span>: see what's short, and keep floss aside for the ones you're stitching.</span></span>
       </li>
       <li>
         <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="17" y1="7" x2="7" y2="17" stroke="#9e7018" stroke-width="3" stroke-linecap="round"/><line x1="7" y1="7" x2="17" y2="17" stroke="#d4a030" stroke-width="3" stroke-linecap="round"/></svg>
-        <span class="t"><b>Handy tools</b> <span>— fabric &amp; floss calculators, color conversions, storage boxes.</span></span>
+        <span class="t"><b>Shop smart</b><span>: build a list, then top up your stash in a tap.</span></span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="17" y1="7" x2="7" y2="17" stroke="#9b2222" stroke-width="3" stroke-linecap="round"/><line x1="7" y1="7" x2="17" y2="17" stroke="#c43030" stroke-width="3" stroke-linecap="round"/></svg>
+        <span class="t"><b>Handy tools</b><span>: fabric &amp; floss calculators, color conversions, storage boxes, and a backup you keep.</span></span>
       </li>
     </ul>
 
@@ -196,13 +216,26 @@
     </svg>
 
     <p class="maker">
-      Built by one stitcher, for stitchers. <b>No ads, no accounts, no cloud.</b>
+      Built by one stitcher, for stitchers. <b>No ads, no accounts.</b>
     </p>
 
     <p class="private">
-      <b>Yours, and yours alone.</b> Your projects, notes, and photos live only on
-      your device.
+      <b>Yours, and yours alone.</b> Your stash, projects, notes and photos live
+      only on your device. When you import a pattern, only the pages you pick are
+      sent to be read, and they are not kept.
+      <a href="./privacy-policy.html">How that works</a>.
     </p>
+
+    <section class="pro" aria-label="Stitch Organizer Pro">
+      <h2>Stitch Organizer Pro</h2>
+      <p class="sub">Optional, yearly. Your stash and shopping list stay free.</p>
+      <ul>
+        <li>Unlimited projects and storage boxes</li>
+        <li>Pattern Import, unlimited, fair use applies</li>
+        <li>Skeins worked out from your pattern's stitch counts</li>
+      </ul>
+      <p class="foot">Your first pattern import is free, no plan needed.</p>
+    </section>
 
     <section class="get" aria-label="Download Stitch Organizer">
       <p class="get-label">Free on iPhone and Android</p>
